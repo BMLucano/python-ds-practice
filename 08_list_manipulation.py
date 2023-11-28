@@ -50,11 +50,12 @@ def list_manipulation(lst, command, location, value=None):
         elif location == "end":
             lst.append(value)
             return lst
-    elif  command == "remove":
+
+    elif command == "remove":
         if location =="beginning":
             return lst.pop(0)
         elif location =="end":
-            return lst.pop(-1)
+            return lst.pop()
 
 
 
